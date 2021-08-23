@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="feed.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a id="logo">TunePad</a>
+      <a class="active" href="#Feed">Feed</a>
+      <a href="#explore">Explore</a>
+      <a href="#post">Post</a>
+      <a href="#profle">Profile</a>
+    </div>
+  </header>
+
+  <form class="search_bar">
+    <input id="search_input" type="search" placeholder="Search by artist, genre, vibe...">
+    <i class="fa fa-search"></i>
+  </form>
+
+  <div class="feed_post">
+    <div id="user_info">
+      <img id="pp" src="pp.png" alt="profile_pic" width="90" height="90">
+      <p id="username"> username </p>
+    </div>
+    <div>
+      <p id="project_name"> Name of Project </p>
+      <span id="music_buttons" class="material-icons">
+        play_arrow
+      </span>
+      <span id="music_buttons" class="material-icons">
+        stop
+      </span>
+    </div>
+    <div class="cells">
+      <div class="keys">
+        <p id="keys_title">Keys</p>
+      </div>
+    </div>
+    <button onclick="liked()" id="like_button">
+      <span class="material-icons" id="like_button_inner">
+        thumb_up_off_alt
+      </span>
+    </button>
+    <p id="num_likes"> 0 likes <p>
+
+    <div class ="comment_section">
+     
+    </div>
+
+    <form class="comment_bar">
+      <input id="comment_input" type="comment" placeholder="Write a comment...">
+      <button onclick="commented()"> <input id="post_comment" type="submit" value="Post"> <button>
+    </form>
+  </div>
+
+</body>
+<script src="feed.js"></script>
+</html>
