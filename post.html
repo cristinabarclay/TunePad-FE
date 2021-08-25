@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <link rel="stylesheet" href="post.css">
+  <link rel="stylesheet" href="feed.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -11,9 +11,44 @@
       rel="stylesheet">
 
 </head>
-<body>
+<body class="body_post">
+
+  <header>
+    <div class="navbar">
+      <a id="logo">TunePad</a>
+      <a href="#Feed">Feed</a>
+      <a href="#explore">Explore</a>
+      <a href="#post">Post</a>
+      <a href="#profle">Profile</a>
+    </div>
+  </header>
+
+
+  <p id="title">Create a post</p>
+.
+
+  <fieldset>
+
+    <label>Search your projects:</label>
+    <input  autocomplete="off" role="combobox" list="" class="post-inputs" name="browsers">
+
+    <datalist id="browsers" role="listbox">
+      <option value="Say So">Say So
+      <option value="Drake Remix">Drake Remix
+      <option value="Bad Habit">Bad Habit
+      <option value="Cold Heart">Cold Heart
+      <option value="Good 4 u">Good 4 u
+    </datalist>
+
+    <label>Hastags:</label>
+    <input autocomplete="on "id="hashtags" name="hastags" class="post-inputs">
+
+  </fieldset>
+
+  <button id="post_button"> Post project </button>
+
 
 
 </body>
-<script src="feed.js"></script>
+<script src="app.js"></script>
 </html>

@@ -15,7 +15,7 @@
   <header>
     <div class="navbar">
       <a id="logo">TunePad</a>
-      <a class="active" href="#Feed">Feed</a>
+      <a href="#Feed">Feed</a>
       <a href="#explore">Explore</a>
       <a href="#post">Post</a>
       <a href="#profle">Profile</a>
@@ -29,40 +29,49 @@
 
   <div class="feed_post">
     <div id="user_info">
-      <img id="pp" src="pp.png" alt="profile_pic" width="90" height="90">
+      <div class="img-wrapper">
+
+      </div>
       <p id="username"> username </p>
     </div>
-    <div>
+
+    <div class="name-wrapper">
       <p id="project_name"> Name of Project </p>
-      <span id="music_buttons" class="material-icons">
-        play_arrow
-      </span>
-      <span id="music_buttons" class="material-icons">
-        stop
-      </span>
+      <div class="music-buttons-wrapper">
+        <span class="music_buttons material-icons" >
+          play_arrow
+        </span>
+        <span class="music_buttons material-icons">
+          stop
+        </span>
+      </div>
     </div>
+
     <div class="cells">
       <div class="keys">
         <p id="keys_title">Keys</p>
       </div>
     </div>
-    <button onclick="liked()" id="like_button">
-      <span class="material-icons" id="like_button_inner">
-        thumb_up_off_alt
-      </span>
-    </button>
-    <p id="num_likes"> 0 likes <p>
 
-    <div class ="comment_section">
-     
+    <div class="likes">
+      <button onclick="liked()" id="like_button">
+        <span class="material-icons" id="like_button_inner">
+          thumb_up_off_alt
+        </span>
+      </button>
+
+      <p id="num_likes"> 0 likes <p>
     </div>
 
-    <form class="comment_bar">
+    <div class ="comment_section" id="comments"> </div>
+
+    <div class="comment_bar">
       <input id="comment_input" type="comment" placeholder="Write a comment...">
-      <button onclick="commented()"> <input id="post_comment" type="submit" value="Post"> <button>
-    </form>
+      <div class="btn" onclick="commented()">Post</div>
+    </div>
+
   </div>
 
 </body>
-<script src="feed.js"></script>
+<script src="app.js"></script>
 </html>
