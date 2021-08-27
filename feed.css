@@ -131,7 +131,6 @@ body{
   width:90px;
   border-radius: 50%;
   background-color: pink;
-
 }
 
 
@@ -141,13 +140,13 @@ body{
   font-weight: bold;
   left: 100px;
   margin-left: 20px;
-
 }
 
 .name-wrapper{
   width:900px;
   height: 40px;
   position: relative;
+  margin-bottom: 15px;
 
 }
 
@@ -233,7 +232,7 @@ body{
 
 #comments{
   width:900px;
-  height: 50px;
+  height: 40px;
   font-family: Roboto;
   display: flex;
   align-items: center;
