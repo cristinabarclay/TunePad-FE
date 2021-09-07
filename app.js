@@ -48,7 +48,10 @@ function liked() {
 function commented() {
 
   let comment = document.getElementById('comment_input').value
-  document.querySelector('#comments').innerHTML = "<p> <span style='font-weight: bolder;'>username       </span>" + comment + "</p>"
+  document.querySelector('.comment-section').innerHTML =
+  `<div class="comment">
+    <p> <span style="font-weight: bolder;">username       </span>` + comment + `</p>
+  </div>` + document.querySelector('.comment-section').innerHTML
   //document.querySelector('#comments').innerText = comment;
   //document.getElementById('like_button_inner').innerHTML =`thumb_up_off_alt`
 }
